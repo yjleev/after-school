@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, li {list-style: none;}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    vertical-align: middle;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    border-bottom: 1px solid #00c73c;
+}
+header > div {
+    height: 99px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo a {
+    display: block;
+}
