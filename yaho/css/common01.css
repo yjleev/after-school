@@ -1,0 +1,295 @@
+@charset "utf-8";
+
+/* 태그 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* 공통 레이아웃 */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    border-bottom: 1px solid #00C73C;
+}
+
+.header>div {
+    height: 99px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo a {
+    display: block;
+}
+
+.gnb a {
+    display: block;
+    transition: 0.3s;
+}
+
+.gnb>ul {
+    display: flex;
+    /* margin-right: 20px; */
+}
+
+.gnb>ul>li {
+    position: relative;
+}
+
+.gnb>ul>li>a {
+    padding: 14px 40px;
+    font-size: 17px;
+    margin-top: 50px;
+}
+
+/* .gnb>ul>li>a {
+    line-height: 50px;
+    padding: 0 40px;
+    font-size: 17px;
+    height: 50px;
+} */
+
+.gnb>ul>li:hover>a {
+    background: #00C73C;
+    color: #fff;
+}
+
+.gnb>ul>li>ul {
+    position: absolute;
+    background: #00C73C;
+    left: 0;
+    right: 0;
+    text-align: center;
+    height: 160px;
+    display: none;
+}
+
+/* 한줄 */
+/* .gnb>ul>li:hover ul {
+    display: block;
+} */
+
+/* 서브통 */
+/* .gnb>ul:hover ul {
+    display: block;
+} */
+
+
+.gnb>ul>li>ul a {
+    /* text-align: center; */
+    background: #00C73C;
+    color: #fff;
+    line-height: 40px;
+}
+
+.gnb>ul>li>ul>li:hover a {
+    background: #fff;
+    color: #00C73C;
+}
+
+
+/* 전체통배경 */
+/* .header>div {
+    position: relative;
+} */
+
+.gnb>div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    background: #00C73C;
+    height: 160px;
+    display: none;
+}
+
+/* .gnb:hover>div {
+    display: block;
+} */
+
+
+
+
+
+.slide {
+    height: 300px;
+    overflow: hidden;
+}
+
+.slide li {
+    height: 300px;
+}
+
+.slide li:nth-child(1) {
+    background-image: url(../images/slide01.jpg);
+}
+
+.slide li:nth-child(2) {
+    background-image: url(../images/slide02.jpg);
+}
+
+.slide li:nth-child(3) {
+    background-image: url(../images/slide03.jpg);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.content__title {
+    font-size: 20px;
+    padding-bottom: 5px;
+    margin-left: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.content article {
+    width: calc(100%/3);
+    padding: 20px;
+}
+
+.notice ul {
+    margin-top: 20px;
+}
+
+.notice li {
+    line-height: 170%;
+    color: #888;
+    margin-left: 30px;
+}
+
+.notice a:hover {
+    background: #00C73C;
+    color: #fff;
+}
+
+.gallery ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery li {
+    margin-top: 30px;
+}
+
+.gallery img {
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
+.gallery img:hover {
+    opacity: 1;
+}
+
+.quick a {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.quick img {
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
+.quick img:hover {
+    opacity: 1;
+}
+
+.footer {
+    background: #737373;
+    height: 100px;
+    color: #fff;
+}
+
+.footer img {
+    width: 30px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer div {
+    margin-top: 15px;
+    line-height: 40px;
+}
+
+.footer .sns {
+    text-align: center;
+    letter-spacing: 20px;
+}
+
+.footer p {
+    margin: 30px 0;
+    text-transform: uppercase;
+}
+
+.layer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    display: none;
+}
+
+.layer>div {
+    background: white;
+    width: 600px;
+    margin: 150px auto;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.layer h3 {
+    padding: 20px;
+    color: #f89e0e;
+    border-bottom: 1px solid #f89e0e;
+    padding-bottom: 20px;
+    background-color: #ffe8d3;
+}
+
+.layer p {
+    line-height: 200%;
+    padding: 20px;
+    text-align: justify;
+    background-color: #fcf3e4;
+}
+
+.layer__btm {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.layer__close>span {
+    border: 1px solid rgb(226, 170, 92);
+    border-radius: 3px;
+    width: 70px;
+    display: inline-block;
+    text-align: center;
+}

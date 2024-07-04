@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>가상클래스</title>
+    <style>
+        .box div{
+            width: 200px;
+            height: 200px;
+            border: 2px solid #000;
+            float: left;
+            margin: 10px;
+            }
+        .box div:first-child{
+            background-color: orange;
+            }
+        .box div:last-child{
+            background-color:orangered;
+            }
+        .box div:nth-child(2){
+            background-color:skyblue;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <!-- <h1>lee young goook</h1> -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+</body>
+</html>
